@@ -46,7 +46,7 @@
         <section class="banner overlay">
             <div class="container">
                 <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-                <button class="btn" type="button">Заказать услугу</button>
+                <button data-modal-open class="btn" type="button">Заказать услугу</button>
             </div>
         </section>
         <section class="benefits section">
@@ -96,9 +96,24 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="occupation list">
-                    <li class="occupation-item"><img src="./images/work/img-1.jpg" alt="Разработка технического задания" width="370" height="294"></li>
-                    <li class="occupation-item"><img src="./images/work/img-2.jpg" alt="Тестирование" width="370" height="294"></li>
-                    <li class="occupation-item"><img src="./images/work/img-3.jpg" alt="Выбор цветовой гаммы" width="370" height="294"></li>
+                    <li class="occupation-item">
+                        <img src="./images/work/img-1.jpg" alt="Разработка технического задания" width="370" height="294">
+                        <div class="description-block">
+                            <p class="description-text">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li class="occupation-item">
+                        <img src="./images/work/img-2.jpg" alt="Тестирование" width="370" height="294">
+                        <div class="description-block">
+                            <p class="description-text">Мобильные приложения</p>
+                        </div>
+                    </li>
+                    <li class="occupation-item">
+                        <img src="./images/work/img-3.jpg" alt="Выбор цветовой гаммы" width="370" height="294">
+                        <div class="description-block">
+                            <p class="description-text">Дизайнерские решения</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -355,5 +370,17 @@
             </div>
         </div>
     </footer>
+
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close class="close-btn" type="button">
+                <svg class="close-icon">
+                    <use href="./images/icons.svg/symbol-defs.svg#close-icon"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
 </body>
 </html>
